@@ -6,7 +6,7 @@ def piglatinnyelv(mondat):
 
     for j in szavak:
         elso = j[0]
-        ujszo +=j + elso
+        ujszo +=j + elso + "ay"+" "
     print(ujszo)
     ujmondat+=ujszo
     return ujmondat
