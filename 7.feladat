@@ -1,5 +1,5 @@
 def megfordit(mondat):
-	return mondat[::1]
+	return mondat[::-1]
 
 mondat=("Indul a görög aludni")
 print(mondat)
