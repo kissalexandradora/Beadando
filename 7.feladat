@@ -12,6 +12,13 @@ def megfordit(mondat):
 		ujmondat+=i
 	return ujmondat
 
+def eredeti(mondat):
+	emondat=""
+	mondat=mondat.lower()
+	szavak=mondat.split(" ")
+	for j in szavak:
+		emondat+=j
+	return emondat
 
 mondat=("Indul a görög aludni")
 print(mondat)
