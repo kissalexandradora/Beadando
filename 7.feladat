@@ -26,3 +26,14 @@ while mondat!="":
 	print(mondat)
 	print(megfordit(mondat))
 	print(eredeti(mondat))
+	
+	pali=""
+	if eredeti(mondat)==megfordit(mondat):
+		pali+=mondat
+		print("Palindrom")
+	else:
+		print("Nem palindrom")
+
+	mondat=input("Adja meg a mondatot ")
+
+	print(leghosszabb(pali))
