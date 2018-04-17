@@ -1,5 +1,17 @@
 def megfordit(mondat):
-	return mondat[::-1]
+	uj=""
+	ujmondat=""
+	# mondat=mondat[::-1]
+	# lista=mondat.split(" ")
+	lista=mondat[::-1]
+	for i in lista:
+		uj+=i
+	uj=uj.lower()
+	szavak=uj.split(" ")
+	for i in szavak:
+		ujmondat+=i
+	return ujmondat
+
 
 mondat=("Indul a görög aludni")
 print(mondat)
