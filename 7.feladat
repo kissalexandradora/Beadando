@@ -20,7 +20,9 @@ def eredeti(mondat):
 		emondat+=j
 	return emondat
 
-mondat=("Indul a görög aludni")
-print(mondat)
-print(megfordit(mondat))
-print(eredeti(mondat))
+
+mondat=input("Adja meg a mondatot ")
+while mondat!="":
+	print(mondat)
+	print(megfordit(mondat))
+	print(eredeti(mondat))
