@@ -2,12 +2,16 @@ def piglatinnyelv(mondat):
     mondat=mondat.lower()
     ujmondat = ""
     ujszo=""
+    valasz=""
     szavak = mondat.split(" ")
     for j in szavak:
         elso = j[0]
         ujszo +=j[1:] + elso + "ay"+" "
     ujmondat+=ujszo
-    return ujmondat
+    nagybetu=ujmondat[0].upper()
+    valasz+=nagybetu+ujmondat[1:]
+    return valasz
+
 
 mondat = "The quick brown fox"
 print(mondat)
