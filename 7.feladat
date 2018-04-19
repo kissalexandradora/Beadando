@@ -6,6 +6,13 @@ def megfordit(mondat):
 	ujszavak=ujszavak[::-1]
 	return ujszavak
 
+def eredeti(mondat):
+	mondat = mondat.lower()
+	eszavak = mondat.split(" ")
+	return eszavak
+
+
 mondat=("Indul a görög bab aludni")
 print(mondat)
 print(megfordit(mondat))
+print(eredeti(mondat))
