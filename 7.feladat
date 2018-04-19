@@ -1,39 +1,11 @@
 def megfordit(mondat):
-	uj=""
-	ujmondat=""
-	# mondat=mondat[::-1]
-	# lista=mondat.split(" ")
-	lista=mondat[::-1]
-	for i in lista:
-		uj+=i
-	uj=uj.lower()
-	szavak=uj.split(" ")
-	for i in szavak:
-		ujmondat+=i
-	return ujmondat
-
-def eredeti(mondat):
-	emondat=""
 	mondat=mondat.lower()
-	szavak=mondat.split(" ")
-	for j in szavak:
-		emondat+=j
-	return emondat
+	szavak=mondat[::-1]
+	print(szavak)
+	ujszavak=szavak.split(" ")
+	ujszavak=ujszavak[::-1]
+	return ujszavak
 
-
-mondat=input("Adja meg a mondatot ")
-while mondat!="":
-	print(mondat)
-	print(megfordit(mondat))
-	print(eredeti(mondat))
-	
-	pali=""
-	if eredeti(mondat)==megfordit(mondat):
-		pali+=mondat
-		print("Palindrom")
-	else:
-		print("Nem palindrom")
-
-	mondat=input("Adja meg a mondatot ")
-
-	print(leghosszabb(pali))
+mondat=("Indul a görög bab aludni")
+print(mondat)
+print(megfordit(mondat))
