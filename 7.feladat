@@ -11,8 +11,21 @@ def eredeti(mondat):
 	eszavak = mondat.split(" ")
 	return eszavak
 
+def palindrom_e(mondat):
+	pali=""
+	eszavak=eredeti(mondat)
+	ujszavak=megfordit(mondat)
+	for i in range(0,len(eszavak)):
+		if eszavak[i]==ujszavak[i]:
+			pali+=eszavak[i]+" "
+		# 	print("palindrom", eszavak[i])
+		# else:
+		# 	print("nem palindrom", eszavak[i])
+	return pali
 
-mondat=("Indul a görög bab aludni")
+
+mondat=("Indul a görög aludni sss")
 print(mondat)
 print(megfordit(mondat))
 print(eredeti(mondat))
+print(palindrom_e(mondat))
