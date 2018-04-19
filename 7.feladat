@@ -23,9 +23,22 @@ def palindrom_e(mondat):
 		# 	print("nem palindrom", eszavak[i])
 	return pali
 
+def leghosszabb(mondat):
+	pali=palindrom_e(mondat)
+	lista=pali.split(" ")
+	print(lista)
+	maxhossz=-1
+	maxhely=0
+	for i in range(0,len(lista)-1):
+		hossz=len(lista[i])
+		if hossz>=maxhossz:
+			maxhossz=hossz
+			maxhely=i
+	return lista[maxhely]
 
 mondat=("Indul a görög aludni sss")
 print(mondat)
 print(megfordit(mondat))
 print(eredeti(mondat))
 print(palindrom_e(mondat))
+print("A leghosszabb palindrom szó: "+leghosszabb(mondat))
