@@ -8,9 +8,7 @@ def piglatinnyelv(mondat):
         elso = j[0]
         ujszo +=j[1:] + elso + "ay"+" "
     ujmondat+=ujszo
-    nagybetu=ujmondat[0].upper()
-    valasz+=nagybetu+ujmondat[1:]
-    return valasz
+    return ujmondat.capitalize()
 
 
 mondat = "The quick brown fox"
