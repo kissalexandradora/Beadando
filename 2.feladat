@@ -23,3 +23,17 @@ def tizes_szamrendszerbol(szam, mibe):
 mibol=int(input("Adja meg a számrendszert. "))
 szam=input("Adja meg az átváltandó számot. ")
 mibe=int(input("Adja meg a számrendszert amibe szeretné átváltani. "))
+
+if mibol>10 or mibe>10:
+    print("Túl nagy számrendszert adott meg.")
+elif mibol==mibe:
+    print("Ugyanazt a számrendszert adta meg.")
+elif mibol<2 or mibe<2:
+    print("Rossz számrendszert adott meg.")
+elif mibol==10:
+    print("A {} számrendszerből a(z) {} átváltása {} számrendszerbe: {}".format(mibol, szam, mibe,tizes_szamrendszerbol(szam, mibe)))
+elif mibe==10:
+    print("A {} számrendszerből a(z) {} átváltása {} számrendszerbe: {}".format(mibol,szam,mibe,tizes_szamrendszerbe(mibol,szam)))
+else:
+    print("A {} számrendszerből a(z) {} átváltása {} számrendszerbe: {}".format(mibol, szam, mibe,tizes_szamrendszerbol(szam, mibe)))
+   
