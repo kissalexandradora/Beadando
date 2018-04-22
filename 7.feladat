@@ -18,9 +18,6 @@ def palindrom_e(mondat):
 	for i in range(0,len(eszavak)):
 		if eszavak[i]==ujszavak[i]:
 			pali+=eszavak[i]+" "
-		# 	print("palindrom", eszavak[i])
-		# else:
-		# 	print("nem palindrom", eszavak[i])
 	return pali
 
 def leghosszabb(mondat):
