@@ -6,6 +6,19 @@ def tizes_szamrendszerbe(mibol,szam):
         ujszam+=uj
     return ujszam
 
+def tizes_szamrendszerbol(szam, mibe):
+    if mibol<10:
+        szam=tizes_szamrendszerbe(mibol,szam)
+    else:
+        szam=szam
+    maradekok=""
+    szam=int(szam)
+    while szam!=0:
+        maradek=szam%mibe
+        szam=szam//mibe
+        maradekok+=str(maradek)
+    return maradekok[::-1]
+
 
 mibol=int(input("Adja meg a számrendszert. "))
 szam=input("Adja meg az átváltandó számot. ")
