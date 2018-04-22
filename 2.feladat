@@ -1,1 +1,3 @@
-
+mibol=int(input("Adja meg a számrendszert. "))
+szam=input("Adja meg az átváltandó számot. ")
+mibe=int(input("Adja meg a számrendszert amibe szeretné átváltani. "))
