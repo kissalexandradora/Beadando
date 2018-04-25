@@ -10,7 +10,6 @@ def piglatinnyelv(mondat):
     ujmondat+=ujszo
     return ujmondat.capitalize()
 
-
 mondat = "The quick brown fox"
 print(mondat)
 print(piglatinnyelv(mondat))
