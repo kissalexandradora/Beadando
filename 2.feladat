@@ -36,4 +36,3 @@ elif mibe==10:
     print("A {} számrendszerből a(z) {} átváltása {} számrendszerbe: {}".format(mibol,szam,mibe,tizes_szamrendszerbe(mibol,szam)))
 else:
     print("A {} számrendszerből a(z) {} átváltása {} számrendszerbe: {}".format(mibol, szam, mibe,tizes_szamrendszerbol(szam, mibe)))
-   
