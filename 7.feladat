@@ -34,6 +34,7 @@ def leghosszabb(mondat):
 	return lista[maxhely]
 
 
+kivetelek=("cs dz dzs gy ly ny sz ty zs")
 mondat=("Indul a görög aludni sss")
 print(mondat)
 print(megfordit(mondat))
