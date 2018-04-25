@@ -35,6 +35,8 @@ def leghosszabb(mondat):
 
 
 kivetelek=("cs dz dzs gy ly ny sz ty zs")
+kivetelek=kivetelek.split(" ")
+
 mondat=("Indul a görög aludni sss")
 print(mondat)
 print(megfordit(mondat))
