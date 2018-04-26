@@ -34,8 +34,6 @@ def leghosszabb(mondat):
 	return lista[maxhely]
 
 
-kivetelek=("cs dz dzs gy ly ny sz ty zs")
-kivetelek=kivetelek.split(" ")
 
 mondat=("Indul a görög aludni sss")
 print(mondat)
