@@ -1,1 +1,15 @@
+import string
+def tisztit(mondat):
+    uj=""
+    emondat=""
+    leghosszabb=""
+    for ch in mondat:
+        if ch not in string.punctuation:
+            uj+=ch.lower()
 
+
+
+mondat=input("Adja meg a mondatot ")
+print(mondat)
+
+print(tisztit(mondat))
