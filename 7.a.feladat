@@ -3,6 +3,7 @@ def tisztit_megfordit(mondat):
     uj=""
     emondat=""
     leghosszabb=""
+    mondat=mondat.lower()
     for ch in mondat:
         if ch not in string.punctuation:
             uj+=ch.lower()
