@@ -3,6 +3,10 @@ def leghosszabb_palindrom(mondat):
     uj=""
     emondat=""
     leghosszabb=""
+    valasz=""
+    szamlalo=0
+    maximum=0
+
     mondat=mondat.lower()
     for ch in mondat:
         if ch not in string.punctuation:
