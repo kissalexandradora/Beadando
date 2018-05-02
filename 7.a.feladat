@@ -34,6 +34,5 @@ def leghosszabb_palindrom(mondat):
 
 
 mondat=input("Adja meg a mondatot ")
-
 print(mondat)
 print(leghosszabb_palindrom(mondat))
