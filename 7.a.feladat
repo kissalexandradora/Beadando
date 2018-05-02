@@ -18,6 +18,19 @@ def leghosszabb_palindrom(mondat):
     fmondat=emondat[::-1]
     print(fmondat)
 
+    for j in range(0,len(emondat)):
+        if emondat[j]==fmondat[j]:
+            leghosszabb += emondat[j]
+            szamlalo+=1
+        elif szamlalo>maximum:
+            maximum = szamlalo
+            szamlalo = 0
+            valasz=leghosszabb
+            leghosszabb=""
+        else:
+            szamlalo=0
+            leghosszabb=""
+    return valasz
 
 
 mondat=input("Adja meg a mondatot ")
