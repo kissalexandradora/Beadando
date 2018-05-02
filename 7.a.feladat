@@ -1,5 +1,5 @@
 import string
-def tisztit_megfordit(mondat):
+def leghosszabb_palindrom(mondat):
     uj=""
     emondat=""
     leghosszabb=""
@@ -19,4 +19,4 @@ def tisztit_megfordit(mondat):
 mondat=input("Adja meg a mondatot ")
 
 print(mondat)
-print(tisztit_megfordit(mondat))
+print(leghosszabb_palindrom(mondat))
