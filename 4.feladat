@@ -10,6 +10,13 @@ def piglatinnyelv(mondat):
     ujmondat+=ujszo
     return ujmondat.capitalize()
 
+def angol(mondat):
+    forditando_mondat=piglatinnyelv(mondat)
+    forditando_mondat=forditando_mondat.lower()
+    szavak=forditando_mondat.split(" ")
+
+
 mondat = "The quick brown fox"
 print(mondat)
 print(piglatinnyelv(mondat))
+
