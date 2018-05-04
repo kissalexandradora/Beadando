@@ -33,6 +33,7 @@ def angol(mondat):
     return eredeti_mondat.capitalize()
 
 
+
 mondat = "The quick brown fox"
 print(mondat)
 print("A mondat Pig Latin nyelven: ",piglatinnyelv(mondat))
