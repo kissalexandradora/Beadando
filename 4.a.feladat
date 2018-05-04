@@ -31,7 +31,9 @@ def angol(mondat):
 
 
 
-mondat = "The quick brown fox"
+mondat = input("Adja meg a fordítandó mondatot ")
 print(mondat)
-print("A mondat Pig Latin nyelven: ",piglatinnyelv(mondat))
-print("A Pig Latin nyelvből visszaalakított mondat: ",angol(mondat))
+if "ay" in mondat:
+    print("A Pig Latin nyelvből visszaalakított mondat: ", angol(mondat))
+else:
+    print("A mondat Pig Latin nyelven: ", piglatinnyelv(mondat))
