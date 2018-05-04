@@ -1,1 +1,39 @@
+def piglatinnyelv(mondat):
+    ujmondat = ""
+    ujszo=""
+    mondat = mondat.lower()
+    szavak = mondat.split(" ")
 
+    for i in szavak:
+        vegere = i[0]
+        ujszo +=i[1:] + vegere + "ay"+" "
+    ujmondat+=ujszo
+    return ujmondat.capitalize()
+
+
+def angol(mondat):
+    ay_nelkul=""
+    szo=""
+    eredeti_mondat=""
+    forditando_mondat=piglatinnyelv(mondat)
+    forditando_mondat=forditando_mondat.lower()
+    szavak=forditando_mondat.split(" ")
+
+    for j in szavak:
+        if j.find("ay"):
+            ay_nelkul+=j[:len(j)-2]+" "
+            # print(ay_nelkul)
+
+    ay_nelkul=ay_nelkul.split(" ")
+    for k in ay_nelkul:
+        elore=k[len(k)-1:]
+        szo+=elore+k[:len(k)-1]+" "
+        # print(szo)
+    eredeti_mondat+=szo
+    return eredeti_mondat.capitalize()
+
+
+mondat = "The quick brown fox"
+print(mondat)
+print("A mondat Pig Latin nyelven: ",piglatinnyelv(mondat))
+print("A Pig Latin nyelvből visszaalakított mondat: ",angol(mondat))
