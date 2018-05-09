@@ -10,5 +10,27 @@ def tisztit(mondat):
         emondat+=i
     return emondat
     
-    
+def palindrom_e(mondat):
+    min=0
+    max=len(mondat)-1
+    while min<=max:
+        if mondat[min]!=mondat[max]:
+            return False
+        min+=1
+        max-=1
+    return True
+
+def leghosszabb_palindrom(mondat):
+    emondat=tisztit(mondat)
+    palindrom=""
+    szamlalo=0
+    for i in range(0, len(emondat)):
+        for j in range(i+szamlalo, len(emondat)):
+            if(palindrom_e(emondat[i:j+1])):
+                szamlalo=j-i+1
+                palindrom=emondat[i:j+1]
+    return palindrom
+
+
 mondat=input("Adja meg a mondatot ")
+print("A leghosszabb palindrom: "+leghosszabb_palindrom(mondat))
