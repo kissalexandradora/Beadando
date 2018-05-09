@@ -1,1 +1,14 @@
-
+import string
+def tisztit(mondat):
+    uj=""
+    emondat=""
+    for ch in mondat:
+        if ch not in string.punctuation:
+            uj+=ch.lower()
+    szavak=uj.split(" ")
+    for i in szavak:
+        emondat+=i
+    return emondat
+    
+    
+mondat=input("Adja meg a mondatot ")
